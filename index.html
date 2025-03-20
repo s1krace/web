@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👑SpEc</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Ripple Canvas -->
+    <canvas id="ripple-canvas"></canvas>
+
+    <!-- Background Video -->
+    <video id="bg-video" class="hidden" loop muted>
+        <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <!-- Quote Section -->
+    <div class="quote-section">
+        <div class="quote-text"></div>
+        <div class="controls">
+            <button id="next" class="control-btn">
+                <span>Next</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            <button id="enter" class="control-btn" style="display: none;">
+                <span>Enter</span>
+                <i class="fas fa-door-open"></i>
+            </button>
+            <button id="skip" class="control-btn skip-btn">
+                <span>Skip</span>
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+        <div class="card-content">
+            <!-- Discord Banner -->
+            <div class="discord-banner">
+                <img src="discord-banner.jpg" alt="Discord Banner">
+            </div>
+            
+            <!-- Profile Picture -->
+            <div class="profile-picture">
+                <img src="profile.jpg" alt="Profile Picture">
+            </div>
+
+            <!-- Profile Info -->
+            <div class="profile-info">
+                <h2 class="profile-name">SpEc</h2>
+                <p class="profile-quote">"The only impossible journey is the one you never begin."</p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://discord.com/users/1292639776784252938" class="social-btn discord" target="_blank">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord</span>
+                </a>
+                <a href="https://t.me/xhoec" class="social-btn telegram" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://dineroshop.xyz" class="social-btn shop" target="_blank">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>DInero's Shop</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Volume Control -->
+    <div class="volume-control">
+        <div class="volume-slider-container">
+            <div class="volume-slider">
+                <div class="volume-slider-fill"></div>
+                <div class="volume-slider-handle"></div>
+            </div>
+        </div>
+        <div class="volume-btn">
+            <i class="fas fa-volume-up"></i>
+        </div>
+    </div>
+
+    <!-- Snow Effect -->
+    <div class="snow"></div>
+
+    <script src="snow.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
