@@ -1,100 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="1">
+
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77VL7HJBW8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-77VL7HJBW8');
+    </script>
+
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>car</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <title>P.CV</title>
+    <meta name="description" content="Paul Macgregor - Designer">
+    
+    <link rel="stylesheet" href="pcv.css">
+
+    <meta property="og:title" content="P.CV">
+    <meta property="og:description" content="Paul Macgregor - Designer">
+    <meta property="og:image" content="https://p.cv/pcv.png">
+    <meta property="og:url" content="https://p.cv">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="p.cv">
+    <meta name="twitter:site" content="@worksdotpm">
+    
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" href="favicon.png">
+
+
 </head>
-<body>
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-dot"></div>
 
-    <!-- Ripple Canvas -->
-    <canvas id="ripple-canvas"></canvas>
+<body id="body-container" class="">
 
-    <!-- Background Video -->
-    <video id="bg-video" class="hidden" loop muted>
-        <source src="background.mp4" type="video/mp4">
-    </video>
+    <div class="outer-container">
 
-    <!-- Quote Section -->
-    <div class="quote-section">
-        <div class="quote-text"></div>
-        <div class="controls">
-            <button id="next" class="control-btn">
-                <span>Next</span>
-                <i class="fas fa-arrow-right"></i>
-            </button>
-            <button id="enter" class="control-btn" style="display: none;">
-                <span>Enter</span>
-                <i class="fas fa-door-open"></i>
-            </button>
-            <button id="skip" class="control-btn skip-btn">
-                <span>Skip</span>
-                <i class="fas fa-forward"></i>
-            </button>
-        </div>
-    </div>
+        <div class="inner-container">
+        
+            <div class="content-container">
+                <div class="no-mobile content-row"><p>P.CV</p></div>
+                <div class="no-mobile content-row content-row-empty"></div>
+                <div class="content-row">
+                    <p>
+                        <span>Paul</span>
+                        <span>Macgregor</span>
+                    </p>
+                </div>
+                <div class="content-row">
+                    <p>
+                        <span class="mobile-text">Designer</span>
+                    </p>
+                </div>
+                <div class="content-row content-row-empty"></div>
+                <div class="content-row">
+                    <button id="link-1" class="content-link" tabindex="1">
+                        
+                        <span class="button-label">Linear&nbsp;&nbsp;&nbsp;2024&nbsp;→&nbsp;····</span>
+                        <span class="mobile-only">[↗]</span>
+                        
+                    </button>
+                </div>
 
-    <!-- Profile Card -->
-    <div class="profile-card">
-        <div class="card-content">
-            <!-- Discord Banner -->
-            <div class="discord-banner">
-                <img src="discord-banner.jpg" alt="Discord Banner">
+                <div class="content-row">
+                    <button id="link-2" class="content-link" tabindex="1">
+                        
+                        <span class="button-label">Tumblr&nbsp;&nbsp;&nbsp;2023&nbsp;→&nbsp;2024</span>
+                        <span class="mobile-only">[↗]</span>
+                        
+                    </button>
+                </div>
+
+                <div class="content-row">
+                    <button id="link-3" class="content-link" tabindex="1">
+                        
+                        <span class="button-label">Twitter&nbsp;&nbsp;2018&nbsp;→&nbsp;2023</span>
+                        <span class="mobile-only">[↗]</span>
+                        
+                    </button>
+                </div>
+
+                <div class="content-row">
+                    <div class="content-no-link">
+                        
+                        <span class="button-label">Misc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2010&nbsp;→&nbsp;2018</span>
+                        <span class="mobile-only">[-]</span>
+                        
+                    </div>
+                </div>
+               
+                <div class="content-row content-row-empty"></div>
+
+
+                <div class="content-row">
+                    <button id="link-4" class="content-link" tabindex="1">
+                        
+                        <span class="button-label">Portfolio</span>
+                        <span class="mobile-only">[↗]</span>
+                        
+                    </button>
+                </div>
+
+                <div class="content-row">
+                    <button id="email-copy" class="no-mobile content-copy" tabindex="1">
+                        
+                        <span class="button-label">Email</span>
+                        
+                    </button>
+
+                    <button id="email-link" class="mobile-only content-copy" tabindex="1">
+                        
+                        <span class="button-label">Email</span>
+                        <span class="mobile-only">[+]</span>
+                        
+                    </button>
+
+                </div>
+                
+                <div class="content-row content-row-empty"></div>
+
+                <div class="content-row">
+                    <button id="link-5" class="content-link" tabindex="1">
+                        
+                        <span class="button-label">Bluesky</span>
+                        <span class="mobile-only">[↗]</span>
+                        
+                    </button>
+                </div>
+
+                <div class="content-row">
+                    <button id="link-6" class="content-link" tabindex="1">
+                        
+                        <span class="button-label">Instagram</span>
+                        <span class="mobile-only">[↗]</span>
+                        
+                    </button>
+                </div>
+
+                <div class="content-row">
+                    <button id="link-7" class="content-link" tabindex="1">
+                        
+                        <span class="button-label">LinkedIn</span>
+                        <span class="mobile-only">[↗]</span>
+                        
+                    </button>
+                </div>
+
+                <div class="content-row">
+                    <button id="link-8" class="content-link" tabindex="1">
+                        
+                        <span class="button-label">Twitter</span>
+                        <span class="mobile-only">[↗]</span>
+                        
+                    </button>
+                </div>
+                
+
+                <div class="content-row content-row-bottom">
+                    <button id="theme-toggle" class="content-switch" tabindex="1">
+                        
+                        <span class="button-label no-mobile">Theme</span>
+                        <span class="mobile-only">[⬏]</span>
+                        
+                    </button>
+                </div>
+
             </div>
+
             
-            <!-- Profile Picture -->
-            <div class="profile-picture">
-                <img src="profile.jpg" alt="Profile Picture">
+            <div id="ascii" class="ascii-container">
+                <pre data-selection-enabled="false"></pre>
+                <div id="ascii-hint" class="ascii-hint">[&nbsp;]</div>
             </div>
 
-            <!-- Profile Info -->
-            <div class="profile-info">
-                <h2 class="profile-name">race</h2>
-                <p class="profile-quote">"The only impossible journey is the one you never begin."</p>
-            </div>
-
-            <!-- Social Links -->
-            <div class="social-links">
-                <a href="https://discord.com/users/960795940929818654" class="social-btn discord" target="_blank">
-                    <i class="fab fa-discord"></i>
-                    <span>Discord</span>
-                </a>
-                <a href="https://t.me/racelol" class="social-btn telegram" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                    <span>Telegram</span>
-                </a>
-                <a href="https://www.themoviedb.org/" class="social-btn shop" target="_blank">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span>Movie DB</span>
-                </a>
-            </div>
+            <div id="ascii-click" class="ascii-click-container"></div>
+            
         </div>
+
     </div>
+    
+    <script>
+        
+        var themeToggle = document.getElementById("theme-toggle");
 
-    <!-- Volume Control -->
-    <div class="volume-control">
-        <div class="volume-slider-container">
-            <div class="volume-slider">
-                <div class="volume-slider-fill"></div>
-                <div class="volume-slider-handle"></div>
-            </div>
-        </div>
-        <div class="volume-btn">
-            <i class="fas fa-volume-up"></i>
-        </div>
-    </div>
+        var emailCopy = document.getElementById("email-copy");
+        var emailLink = document.getElementById("email-link");
 
-    <!-- Snow Effect -->
-    <div class="snow"></div>
+        var link1 = document.getElementById("link-1");
+        var link2 = document.getElementById("link-2");
+        var link3 = document.getElementById("link-3");
+        var link4 = document.getElementById("link-4");
+        var link5 = document.getElementById("link-5");
+        var link6 = document.getElementById("link-6");
+        var link7 = document.getElementById("link-7");
+        var link8 = document.getElementById("link-8");   
 
-    <script src="snow.js"></script>
-    <script src="app.js"></script>
+        var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        
+        if (storedTheme){
+            if (storedTheme == "dark"){
+                document.documentElement.setAttribute('data-theme', "6");
+                //themeToggle.innerHTML = "[·····*·]";
+            }
+            else if (storedTheme == "light"){
+                document.documentElement.setAttribute('data-theme', "2");
+                //themeToggle.innerHTML = "[·*······]";
+            }
+            else{
+                document.documentElement.setAttribute('data-theme', storedTheme);
+            }
+        }
+
+        themeToggle.onclick = function() {
+
+            console.log('Theme Toggle...');
+
+            var currentTheme = document.documentElement.getAttribute("data-theme");
+
+            var targetTheme = "6";
+            
+            if (currentTheme === "1") { targetTheme = "2"; }
+            else if (currentTheme === "2") { targetTheme = "3"; }
+            else if (currentTheme === "3") { targetTheme = "4"; }
+            else if (currentTheme === "4") { targetTheme = "5"; }
+            else if (currentTheme === "5") { targetTheme = "6"; }
+            else if (currentTheme === "6") { targetTheme = "7"; }
+            else { targetTheme = "1"; };
+
+            document.documentElement.setAttribute('data-theme', targetTheme)
+            localStorage.setItem('theme', targetTheme);
+
+        }
+
+        emailCopy.onmouseenter = function() {
+            const root = document.querySelector(":root");
+            root.style.setProperty("--copy-text", `" [+]"`);
+        }
+        emailCopy.onfocus = function() {
+            const root = document.querySelector(":root");
+            root.style.setProperty("--copy-text", `" [+]"`);
+        }
+        emailCopy.onclick = function() {
+            navigator.clipboard.writeText('paul@works.pm');
+            const root = document.querySelector(":root");
+            root.style.setProperty("--copy-text", `" [COPIED]"`);
+        }
+
+        emailLink.onclick = function() {
+            window.location.href = "mailto:paul@works.pm";
+        }
+
+        link1.onclick = function() {
+           window.open("https://linear.app", '_blank');
+        }
+        link2.onclick = function() {
+           window.open("https://tumblr.com", '_blank');
+        }
+        link3.onclick = function() {
+           window.open("https://twitter.com", '_blank');
+        }
+        link4.onclick = function() {
+           window.open("https://works.pm", '_blank');
+        }
+        link5.onclick = function() {
+           window.open("https://bsky.app/profile/p.cv", '_blank');
+        }
+        link6.onclick = function() {
+           window.open("https://instagram.com/pdotcv", '_blank');
+        }
+        link7.onclick = function() {
+           window.open("https://linkedin.com/in/macgregorpaul", '_blank');
+        }
+        link8.onclick = function() {
+           window.open("https://twitter.com/pdotcv", '_blank');
+        }
+
+    </script>
+
+    <script type="module">
+        import { run } from '/src/run.js'
+        import * as program from '/ascii.js'
+        run(program, { element : document.querySelector('pre') }).then(function(e){
+            console.log(e)
+        }).catch(function(e) {
+            console.warn(e.message)
+            console.log(e.error)
+        })
+    </script>
+    
+
 </body>
+
 </html>
