@@ -17,17 +17,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>P.CV</title>
-    <meta name="description" content="Paul Macgregor - Designer">
+    <title>Racecar</title>
+    <meta name="description" content="Racecar">
     
     <link rel="stylesheet" href="pcv.css">
 
-    <meta property="og:title" content="P.CV">
-    <meta property="og:description" content="Paul Macgregor - Designer">
+    <meta property="og:title" content="Racecar ">
+    <meta property="og:description" content="Racecar">
     <meta property="og:image" content="https://p.cv/pcv.png">
     <meta property="og:url" content="https://p.cv">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:site_name" content="p.cv">
+    <meta property="og:site_name" content="...">
     <meta name="twitter:site" content="@worksdotpm">
     
     <link rel="apple-touch-icon" href="icon.png">
@@ -43,12 +43,12 @@
         <div class="inner-container">
         
             <div class="content-container">
-                <div class="no-mobile content-row"><p>P.CV</p></div>
+                <div class="no-mobile content-row"><p>...</p></div>
                 <div class="no-mobile content-row content-row-empty"></div>
                 <div class="content-row">
                     <p>
-                        <span>Paul</span>
-                        <span>Macgregor</span>
+                        <span>Race</span>
+                        <span>car</span>
                     </p>
                 </div>
                 <div class="content-row">
@@ -60,7 +60,7 @@
                 <div class="content-row">
                     <button id="link-1" class="content-link" tabindex="1">
                         
-                        <span class="button-label">Linear&nbsp;&nbsp;&nbsp;2024&nbsp;→&nbsp;····</span>
+                        <span class="button-label">Discord&nbsp;&nbsp;&nbsp;2024&nbsp;→&nbsp;····</span
                         <span class="mobile-only">[↗]</span>
                         
                     </button>
@@ -69,7 +69,7 @@
                 <div class="content-row">
                     <button id="link-2" class="content-link" tabindex="1">
                         
-                        <span class="button-label">Tumblr&nbsp;&nbsp;&nbsp;2023&nbsp;→&nbsp;2024</span>
+                        <span class="button-label">Twitter&nbsp;&nbsp;&nbsp;2023&nbsp;→&nbsp;2024</span>
                         <span class="mobile-only">[↗]</span>
                         
                     </button>
@@ -78,7 +78,7 @@
                 <div class="content-row">
                     <button id="link-3" class="content-link" tabindex="1">
                         
-                        <span class="button-label">Twitter&nbsp;&nbsp;2018&nbsp;→&nbsp;2023</span>
+                        <span class="button-label">tTelegram&nbsp;&nbsp;2018&nbsp;→&nbsp;2023</span>
                         <span class="mobile-only">[↗]</span>
                         
                     </button>
@@ -96,82 +96,6 @@
                 <div class="content-row content-row-empty"></div>
 
 
-                <div class="content-row">
-                    <button id="link-4" class="content-link" tabindex="1">
-                        
-                        <span class="button-label">Portfolio</span>
-                        <span class="mobile-only">[↗]</span>
-                        
-                    </button>
-                </div>
-
-                <div class="content-row">
-                    <button id="email-copy" class="no-mobile content-copy" tabindex="1">
-                        
-                        <span class="button-label">Email</span>
-                        
-                    </button>
-
-                    <button id="email-link" class="mobile-only content-copy" tabindex="1">
-                        
-                        <span class="button-label">Email</span>
-                        <span class="mobile-only">[+]</span>
-                        
-                    </button>
-
-                </div>
-                
-                <div class="content-row content-row-empty"></div>
-
-                <div class="content-row">
-                    <button id="link-5" class="content-link" tabindex="1">
-                        
-                        <span class="button-label">Bluesky</span>
-                        <span class="mobile-only">[↗]</span>
-                        
-                    </button>
-                </div>
-
-                <div class="content-row">
-                    <button id="link-6" class="content-link" tabindex="1">
-                        
-                        <span class="button-label">Instagram</span>
-                        <span class="mobile-only">[↗]</span>
-                        
-                    </button>
-                </div>
-
-                <div class="content-row">
-                    <button id="link-7" class="content-link" tabindex="1">
-                        
-                        <span class="button-label">LinkedIn</span>
-                        <span class="mobile-only">[↗]</span>
-                        
-                    </button>
-                </div>
-
-                <div class="content-row">
-                    <button id="link-8" class="content-link" tabindex="1">
-                        
-                        <span class="button-label">Twitter</span>
-                        <span class="mobile-only">[↗]</span>
-                        
-                    </button>
-                </div>
-                
-
-                <div class="content-row content-row-bottom">
-                    <button id="theme-toggle" class="content-switch" tabindex="1">
-                        
-                        <span class="button-label no-mobile">Theme</span>
-                        <span class="mobile-only">[⬏]</span>
-                        
-                    </button>
-                </div>
-
-            </div>
-
-            
             <div id="ascii" class="ascii-container">
                 <pre data-selection-enabled="false"></pre>
                 <div id="ascii-hint" class="ascii-hint">[&nbsp;]</div>
@@ -192,12 +116,7 @@
 
         var link1 = document.getElementById("link-1");
         var link2 = document.getElementById("link-2");
-        var link3 = document.getElementById("link-3");
-        var link4 = document.getElementById("link-4");
-        var link5 = document.getElementById("link-5");
-        var link6 = document.getElementById("link-6");
-        var link7 = document.getElementById("link-7");
-        var link8 = document.getElementById("link-8");   
+        var link3 = document.getElementById("link-3");   
 
         var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
         
@@ -245,38 +164,24 @@
             root.style.setProperty("--copy-text", `" [+]"`);
         }
         emailCopy.onclick = function() {
-            navigator.clipboard.writeText('paul@works.pm');
+            navigator.clipboard.writeText('racecar.cc doesnt have a email');
             const root = document.querySelector(":root");
             root.style.setProperty("--copy-text", `" [COPIED]"`);
         }
 
         emailLink.onclick = function() {
-            window.location.href = "mailto:paul@works.pm";
+            window.location.href = "mailto:Racecar.cc doesnt have a email";
         }
 
         link1.onclick = function() {
-           window.open("https://linear.app", '_blank');
+           window.open("https://discordapp.com/users/960795940929818654", '_blank');
         }
         link2.onclick = function() {
-           window.open("https://tumblr.com", '_blank');
+           window.open("https://t.me/racelol", '_blank');
+    
         }
         link3.onclick = function() {
-           window.open("https://twitter.com", '_blank');
-        }
-        link4.onclick = function() {
-           window.open("https://works.pm", '_blank');
-        }
-        link5.onclick = function() {
-           window.open("https://bsky.app/profile/p.cv", '_blank');
-        }
-        link6.onclick = function() {
-           window.open("https://instagram.com/pdotcv", '_blank');
-        }
-        link7.onclick = function() {
-           window.open("https://linkedin.com/in/macgregorpaul", '_blank');
-        }
-        link8.onclick = function() {
-           window.open("https://twitter.com/pdotcv", '_blank');
+           window.open("https://twitter.com/s1krace", '_blank');
         }
 
     </script>
