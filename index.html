@@ -2,14 +2,12 @@
 <html lang="en" data-theme="1">
 
 <head>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-77VL7HJBW8"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-77VL7HJBW8');
     </script>
 
@@ -17,84 +15,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Racecar</title>
-    <meta name="description" content="Racecar">
+    <title>Racecar.cc</title>
+    <meta name="description" content="EDIT HERE">
     
     <link rel="stylesheet" href="pcv.css">
 
-    <meta property="og:title" content="Racecar ">
-    <meta property="og:description" content="Racecar">
+    <meta property="og:title" content="EDIT HERE">
+    <meta property="og:description" content="EDIT HERE">
     <meta property="og:image" content="https://p.cv/pcv.png">
     <meta property="og:url" content="https://p.cv">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:site_name" content="...">
-    <meta name="twitter:site" content="@worksdotpm">
+    <meta property="og:site_name" content="racecar.cc">
+    <meta name="twitter:site" content="@s1krace">
     
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="icon" href="favicon.png">
-
-
 </head>
 
 <body id="body-container" class="">
 
     <div class="outer-container">
-
         <div class="inner-container">
-        
             <div class="content-container">
-                <div class="no-mobile content-row"><p>...</p></div>
-                <div class="no-mobile content-row content-row-empty"></div>
+
+                <div class="content-row"><p>Racecar.cc</p></div>
+                <div class="content-row content-row-empty"></div>
+                
                 <div class="content-row">
-                    <p>
-                        <span>Race</span>
-                        <span>car</span>
-                    </p>
+                    <p><span>RACECAR</span> <span>FREAKY</span></p>
                 </div>
                 <div class="content-row">
-                    <p>
-                        <span class="mobile-text">Designer</span>
-                    </p>
+                    <p><span class="mobile-text">Pro paster</span></p>
                 </div>
                 <div class="content-row content-row-empty"></div>
+
+                <!-- Editable Links -->
                 <div class="content-row">
                     <button id="link-1" class="content-link" tabindex="1">
-                        
-                        <span class="button-label">Discord&nbsp;&nbsp;&nbsp;2024&nbsp;→&nbsp;····</span
+                        <span class="button-label">Telegram</span>
                         <span class="mobile-only">[↗]</span>
-                        
                     </button>
                 </div>
 
                 <div class="content-row">
                     <button id="link-2" class="content-link" tabindex="1">
-                        
-                        <span class="button-label">Twitter&nbsp;&nbsp;&nbsp;2023&nbsp;→&nbsp;2024</span>
+                        <span class="button-label">Discord</span>
                         <span class="mobile-only">[↗]</span>
-                        
                     </button>
                 </div>
 
                 <div class="content-row">
                     <button id="link-3" class="content-link" tabindex="1">
-                        
-                        <span class="button-label">tTelegram&nbsp;&nbsp;2018&nbsp;→&nbsp;2023</span>
+                        <span class="button-label">Twitter</span>
                         <span class="mobile-only">[↗]</span>
-                        
                     </button>
                 </div>
 
                 <div class="content-row">
-                    <div class="content-no-link">
-                        
-                        <span class="button-label">Misc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2010&nbsp;→&nbsp;2018</span>
-                        <span class="mobile-only">[-]</span>
-                        
-                    </div>
+                    <button id="link-4" class="content-link" tabindex="1">
+                        <span class="button-label">nul</span>
+                        <span class="mobile-only">[↗]</span>
+                    </button>
                 </div>
-               
+
                 <div class="content-row content-row-empty"></div>
 
+                <!-- Email -->
+                <div class="content-row">
+                    <button id="email-copy" class="no-mobile content-copy" tabindex="1">
+                        <span class="button-label">Email</span>
+                    </button>
+                    <button id="email-link" class="mobile-only content-copy" tabindex="1">
+                        <span class="button-label">Email</span>
+                        <span class="mobile-only">[+]</span>
+                    </button>
+                </div>
+
+                <div class="content-row content-row-empty"></div>
+
+                <!-- Theme Toggle -->
+                <div class="content-row content-row-bottom">
+                    <button id="theme-toggle" class="content-switch" tabindex="1">
+                        <span class="button-label no-mobile">Theme</span>
+                        <span class="mobile-only">[⬏]</span>
+                    </button>
+                </div>
+
+            </div>
 
             <div id="ascii" class="ascii-container">
                 <pre data-selection-enabled="false"></pre>
@@ -102,46 +109,35 @@
             </div>
 
             <div id="ascii-click" class="ascii-click-container"></div>
-            
         </div>
-
     </div>
     
     <script>
-        
         var themeToggle = document.getElementById("theme-toggle");
-
         var emailCopy = document.getElementById("email-copy");
         var emailLink = document.getElementById("email-link");
 
         var link1 = document.getElementById("link-1");
         var link2 = document.getElementById("link-2");
-        var link3 = document.getElementById("link-3");   
+        var link3 = document.getElementById("link-3");
+        var link4 = document.getElementById("link-4");
 
         var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-        
-        if (storedTheme){
-            if (storedTheme == "dark"){
+
+        if (storedTheme) {
+            if (storedTheme == "dark") {
                 document.documentElement.setAttribute('data-theme', "6");
-                //themeToggle.innerHTML = "[·····*·]";
-            }
-            else if (storedTheme == "light"){
+            } else if (storedTheme == "light") {
                 document.documentElement.setAttribute('data-theme', "2");
-                //themeToggle.innerHTML = "[·*······]";
-            }
-            else{
+            } else {
                 document.documentElement.setAttribute('data-theme', storedTheme);
             }
         }
 
-        themeToggle.onclick = function() {
-
-            console.log('Theme Toggle...');
-
+        themeToggle.onclick = function () {
             var currentTheme = document.documentElement.getAttribute("data-theme");
-
             var targetTheme = "6";
-            
+
             if (currentTheme === "1") { targetTheme = "2"; }
             else if (currentTheme === "2") { targetTheme = "3"; }
             else if (currentTheme === "3") { targetTheme = "4"; }
@@ -150,54 +146,50 @@
             else if (currentTheme === "6") { targetTheme = "7"; }
             else { targetTheme = "1"; };
 
-            document.documentElement.setAttribute('data-theme', targetTheme)
+            document.documentElement.setAttribute('data-theme', targetTheme);
             localStorage.setItem('theme', targetTheme);
-
         }
 
-        emailCopy.onmouseenter = function() {
-            const root = document.querySelector(":root");
-            root.style.setProperty("--copy-text", `" [+]"`);
+        emailCopy.onmouseenter = function () {
+            document.querySelector(":root").style.setProperty("--copy-text", `" [+]"`);
         }
-        emailCopy.onfocus = function() {
-            const root = document.querySelector(":root");
-            root.style.setProperty("--copy-text", `" [+]"`);
+        emailCopy.onfocus = function () {
+            document.querySelector(":root").style.setProperty("--copy-text", `" [+]"`);
         }
-        emailCopy.onclick = function() {
-            navigator.clipboard.writeText('racecar.cc doesnt have a email');
-            const root = document.querySelector(":root");
-            root.style.setProperty("--copy-text", `" [COPIED]"`);
+        emailCopy.onclick = function () {
+            navigator.clipboard.writeText('Sorryidonthaveaemail@nul.com');
+            document.querySelector(":root").style.setProperty("--copy-text", `" [COPIED]"`);
         }
 
-        emailLink.onclick = function() {
-            window.location.href = "mailto:Racecar.cc doesnt have a email";
+        emailLink.onclick = function () {
+            window.location.href = "mailto:Sorryidonthaveaemail@nul.com";
         }
 
-        link1.onclick = function() {
-           window.open("https://discordapp.com/users/960795940929818654", '_blank');
+        // Link actions – just edit the URLs
+        link1.onclick = function () {
+            window.open("https://t.me/racelol", '_blank');
         }
-        link2.onclick = function() {
-           window.open("https://t.me/racelol", '_blank');
-    
+        link2.onclick = function () {
+            window.open("https://discordapp.com/users/960795940929818654", '_blank');
         }
-        link3.onclick = function() {
-           window.open("https://twitter.com/s1krace", '_blank');
+        link3.onclick = function () {
+            window.open("https://x.com/s1krace", '_blank');
         }
-
+        link4.onclick = function () {
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", '_blank');
+        }
     </script>
 
     <script type="module">
         import { run } from '/src/run.js'
         import * as program from '/ascii.js'
-        run(program, { element : document.querySelector('pre') }).then(function(e){
+        run(program, { element: document.querySelector('pre') }).then(function (e) {
             console.log(e)
-        }).catch(function(e) {
+        }).catch(function (e) {
             console.warn(e.message)
             console.log(e.error)
         })
     </script>
-    
-
 </body>
 
 </html>
