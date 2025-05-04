@@ -5,12 +5,9 @@
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-77VL7HJBW8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-77VL7HJBW8');
-    </script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-77VL7HJBW8" async></script>
+    <script src="main.js" defer></script>
+    <script type="module" src="ascii-init.js"></script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,6 +29,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
 
+    <script src="social-links.js" defer></script>
 </head>
 
 <body id="body-container" class="">
@@ -53,31 +51,19 @@
 
                 <!-- Editable Links -->
                 <div class="content-row">
-                    <button id="link-1" class="content-link" tabindex="1">
-                        <span class="button-label">Telegram</span>
-                        <span class="mobile-only">[↗]</span>
-                    </button>
+                    <a href="#" data-social="telegram">Telegram</a>
                 </div>
 
                 <div class="content-row">
-                    <button id="link-2" class="content-link" tabindex="1">
-                        <span class="button-label">Discord</span>
-                        <span class="mobile-only">[↗]</span>
-                    </button>
+                    <a href="#" data-social="discord">Discord</a>
                 </div>
 
                 <div class="content-row">
-                    <button id="link-3" class="content-link" tabindex="1">
-                        <span class="button-label">Twitter</span>
-                        <span class="mobile-only">[↗]</span>
-                    </button>
+                    <a href="#" data-social="twitter">Twitter</a>
                 </div>
 
                 <div class="content-row">
-                    <button id="link-4" class="content-link" tabindex="1">
-                        <span class="button-label">nul</span>
-                        <span class="mobile-only">[↗]</span>
-                    </button>
+                    <a href="#" data-social="special">nul</a>
                 </div>
 
                 <div class="content-row content-row-empty"></div>
@@ -118,11 +104,6 @@
         var themeToggle = document.getElementById("theme-toggle");
         var emailCopy = document.getElementById("email-copy");
         var emailLink = document.getElementById("email-link");
-
-        var link1 = document.getElementById("link-1");
-        var link2 = document.getElementById("link-2");
-        var link3 = document.getElementById("link-3");
-        var link4 = document.getElementById("link-4");
 
         var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
@@ -165,20 +146,6 @@
 
         emailLink.onclick = function () {
             window.location.href = "mailto:scoobywoojew@proton.me";
-        }
-
-        // Link actions – just edit the URLs
-        link1.onclick = function () {
-            window.open("https://t.me/racelol", '_blank');
-        }
-        link2.onclick = function () {
-            window.open("https://discordapp.com/users/960795940929818654", '_blank');
-        }
-        link3.onclick = function () {
-            window.open("https://x.com/s1krace", '_blank');
-        }
-        link4.onclick = function () {
-            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", '_blank');
         }
 
         // Palindrome effect for title
