@@ -2,7 +2,7 @@
 const links = [
   { id: "link-1", url: "https://t.me/racelol" },
   { id: "link-2", url: "https://discordapp.com/users/960795940929818654" },
-  { id: "link-3", url: "https://x.com/s1krace" },
+  { id: "link-3", url: "https://x.com/xx_racecar_xx" },
   { id: "link-4", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
 ];
 
